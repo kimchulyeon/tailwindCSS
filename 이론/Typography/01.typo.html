@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Font Size</title>
+  </head>
+  <body class="m-20">
+    <!-- 
+      TODO FONT SIZE
+      - text-tailwind에서_지정된_이름 (text-sm)
+      - text-[크기] (text-[10px])
+    -->
+    <h2 class="text-xs">hello tailwind</h2>
+    <h2 class="text-sm">hello tailwind</h2>
+    <h1 class="text-md">hello tailwind</h1>
+    <h1 class="text-lg">hello tailwind</h1>
+    <h1 class="text-xl">hello tailwind</h1>
+    <h1 class="text-2xl">hello tailwind</h1>
+    <h1 class="text-3xl">hello tailwind</h1>
+    <h1 class="text-9xl">hello tailwind</h1>
+
+    <h1 class="text-[20px]">text-[20px]</h1>
+
+    <hr class="my-[30px]" />
+
+    <!-- 
+      TODO FONT STYLE
+      - italic
+      - not-italic
+    -->
+    <h1 class="italic">hello tailwind</h1>
+
+    <hr class="my-[30px]" />
+
+    <!-- 
+      TODO FONT WEIGHT
+      - font-tailwind에서_지정된_이름 (font-thin)
+      - font-[두께] (font-[100])
+    -->
+
+    <h1 class="font-thin">hello tailwind</h1>
+    <h1 class="font-extralight">hello tailwind</h1>
+    <h1 class="font-light">hello tailwind</h1>
+    <h1 class="font-normal">hello tailwind</h1>
+    <h1 class="font-medium">hello tailwind</h1>
+    <h1 class="font-semibold">hello tailwind</h1>
+    <h1 class="font-bold">hello tailwind</h1>
+    <h1 class="font-extrabold">hello tailwind</h1>
+
+    <hr />
+
+    <!-- 
+      TODO LINE CLAMP : 문단 끝 말 줄임
+      - line-clamp-tailwind에서_지정된_숫자 (1~6)
+      - line-clamp-[숫자]
+    -->
+    <div class="bg-pink-100 w-[300px] h-[300px] mt-5">
+      <p class="line-clamp-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae incidunt
+        esse dolor c ommodi voluptatem omnis deserunt tenetur, assumenda illo,
+        quos nisi porro repellendus consequatur possimus obcaecati, veniam
+        labore nostrum fuga?
+      </p>
+      <br />
+      <p class="line-clamp-3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae incidunt
+        esse dolor commodi voluptatem omnis deserunt tenetur, assumenda illo,
+        quos nisi porro repellendus consequatur possimus obcaecati, veniam
+        labore nostrum fuga?
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- 
+      TODO LINE HEIGHT : 줄 간격 (leading)
+      - leading-tailwind에서_지정된_숫자_또는_문자 (3~12, none, tight, snug, normal, relaxed, loose)
+      - leading-[단위]
+    -->
+    <h1 class="leading-2 bg-yellow-100 mt-5">line height 2</h1>
+    <h1 class="leading-10 bg-yellow-100 mt-5">line height 10</h1>
+
+    <div class="text-[20px]">
+      <h1 class="leading-[10rem] bg-yellow-100 mt-5">line height 10rem</h1>
+      <h1 class="leading-[10em] bg-yellow-100 mt-5">line height 10em</h1>
+    </div>
+
+    <hr />
+
+    <!-- 
+      TODO LETTER SPACING : 글자 간격 (tracking)
+      - tracking-tailwind에서_지정된_문자 (tight, normal, wide)
+      - tracking-[단위]
+    -->
+    <h1 class="tracking-2 bg-blue-100 mt-5">letter spacing 2</h1>
+    <h1 class="tracking-[10px] bg-blue-100 mt-5">letter spacing 10</h1>
+
+    <hr class="my-5" />
+
+    <!-- 
+      TODO LIST STYLE 
+      - list-tailwind에서_지정된_문자 (list-disc, list-decimal)
+      - list-[스타일] (list-[square], list-[upper-alpha])
+
+      TODO LIST STYLE POSITION
+      - list-inside
+      - list-outside
+
+      TODO LIST STYLE IMAGE
+      - list-image-[url('이미지경로')]
+    -->
+    <ul class="list-disc list-inside bg-orange-100 border border-black">
+      <li>list-disc list-inside</li>
+      <li>list-disc list-inside</li>
+      <li>list-disc list-inside</li>
+    </ul>
+
+    <ul class="list-disc list-outside bg-orange-100 mt-3 border border-black">
+      <li>list-disc list-outside</li>
+      <li>list-disc list-outside</li>
+      <li>list-disc list-outside</li>
+    </ul>
+
+    <ul
+      class="list-decimal list-outside bg-purple-100 mt-3 border border-black"
+    >
+      <li>list-decimal list-outside</li>
+      <li>list-decimal list-outside</li>
+      <li>list-decimal list-outside</li>
+    </ul>
+  </body>
+</html>
